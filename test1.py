@@ -48,5 +48,10 @@ class NewVisitorTest(unittest.TestCase):
         table = self.browser.find_element(By.ID,'id_list_table')
         rows = table.find_elements(By.TAG_NAME,'tr')
         self.assertIn('1:Buy flowers',[row.text for row in rows])
+        
+        time.sleep(5000)
 
         self.fail('Finish the test!')
+
+
+        
