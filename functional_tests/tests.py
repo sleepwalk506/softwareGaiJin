@@ -51,8 +51,8 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
 
         # 页面再次更新，清单中显示了这两个待办事项
-        self.assertIn('1: Buy flowers')
-        self.assertIn('2: Give a gift to Lisi')
+        self.check_for_row_in_list_table('1: Buy flowers')
+        self.check_for_row_in_list_table('2: Give a gift to Lisi')
 
         # 用户看到网站为她生成了一个唯一的URL
 
